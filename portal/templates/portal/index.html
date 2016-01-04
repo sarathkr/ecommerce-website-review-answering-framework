@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NLP Project</title>
+<link rel="stylesheet" type="text/css" href="127.0.0.1:8000/styles.css" />
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://bootsnipp.com/dist/bootsnipp.min.css?ver=7d23ff901039aef6293954d33d23c066">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+
+function myFunction (){
+document.getElementById("demo").innerHTML = "";
+var x = document.getElementById("s");
+var shell = new ActiveXObject("WScript.Shell");
+var c="cmd /c python C:\\Users\\SARATH\\Desktop\\NLPFinals-master\\portal\\main.py \"";
+c=c.concat(x.value);
+c=c.concat("\""); 
+var r=shell.Exec(c);	
+var outputs=r.StdOut.ReadAll();
+$("#demo").append(outputs);
+};
+
+</script>
+
+</head>
+<body bgcolor="#E6E6FA">
+
+<style>
+
+h1 { font-family: 'Droid Serif', serif; font-weight: 400; 	
+    color:#0C6A8A;	text-align:center;
+    padding-top: 1%;}
+
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+}
+ul.rig li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
+}
+
+.search {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    float: left;
+    line-height: 22px;
+}
+
+    .search input {
+        position: absolute;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        height: 30px;
+        line-height: 20px;
+        padding: 0 2px 0 2px;
+        border-radius:1px;
+    }
+
+        .search:hover input, .search input:focus {
+            width: 200px;
+            margin-left: 0px;
+        }
+
+.btn {
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border-radius:1px;
+}
+
+</style>
+
+
+
+<div id="page">
+
+    <h1>Question Answering for E-Commerce</h1>
+
+<ul class="rig">
+    <li>
+        <a href="/items/B000056HNX/">
+            <img src="http://ecx.images-amazon.com/images/I/31BDFD007YL.jpg" height=100 width=100>
+           </br> Philips Avent 3 Pack 9oz Bottles </br>
+        </a>
+    </li>
+    <li>
+        <a href="/items/B000056JC1/">
+            <img src="http://ecx.images-amazon.com/images/I/51RafLbrBRL._AC_UL115_.jpg" height=100 width=100>
+             </br>Dexbaby Pregnancy Pillow </br>
+        </a>
+    </li>
+	<li>
+        <a href="/items/B00000J3LL/">
+            <img src="http://ecx.images-amazon.com/images/I/81vFpOKT4fL._SL1500_.jpg" height=100 width=100>
+             </br>My Quiet Book, Fabric Activity Book for Children </br>
+        </a>
+    </li>
+    <li>
+        <a href="/items/B00002JXFI/">
+            <img src="http://ecx.images-amazon.com/images/I/71Ny-PMGeSL._SL1500_.jpg" height=100 width=100>
+             </br>Soft Teething Beads</br>
+        </a>
+    </li>
+    <li>
+        <a href="/items/B00000J0HU/">
+            <img src="http://ecx.images-amazon.com/images/I/41S9aPsWRWL._SY300_.jpg" height=100 width=100>
+             </br>Fascination Station</br>
+        </a>
+    </li>	
+    <li>
+        <a href="/items/0615447279/">
+            <img src="http://ecx.images-amazon.com/images/I/91kjfPBbHSL._SL1500_.jpg" height=100 width=100>
+             </br>Thumbuddy To Love</br>
+        </a>
+    </li>		
+    <li>
+        <a href="/items/0980027594/">
+            <img src="http://ecx.images-amazon.com/images/I/41uc5lCGwFL.jpg" height=100 width=100>
+             </br>Natures Lullabies</br>
+        </a>
+    </li>	
+	<li>
+        <a href="/items/B002QYW8LW/">
+            <img src="http://ecx.images-amazon.com/images/I/314WU6q8U5L.jpg" height=100 width=100>
+             </br>Baby Banana Bendable Training Toothbrush, Infant</br>
+        </a>
+    </li>	
+		<li>
+        <a href="/items/B004071ZOY/">
+            <img src="http://ecx.images-amazon.com/images/I/91mMl-IWYLL._SL1500_.jpg" height=100 width=100>
+             </br>Baby Aspen Blue Terry Shark Robe</br>
+        </a>
+    </li>	
+	<li>
+        <a href="/items/1592922929/">
+            <img src="http://ecx.images-amazon.com/images/I/91t9wla11QL._SL1500_.jpg" height=100 width=100>
+             </br>A Bedtime Book</br>
+        </a>
+    </li>	
+</ul>	
+
+</div>
+
+<h1>
+Factual Question Answering
+</h1>
+
+<div class="container">
+	<div class="row">
+		<h5>Search for a factual question</h5>
+        <div class="search">
+			<input id="s" type="text" name="s" class="form-control input-sm" maxlength="100" placeholder="Search" />
+			<button type="submit" class="btn btn-primary btn-sm" onclick="myFunction()">Search</button>
+		</div>
+	</div>
+</div>
+
+</br>
+</br>
+<div class="container">
+	<div class="row">
+
+<p id="demo"></p>
+	</div>
+</div>
+
+
+</body>
+</html>
